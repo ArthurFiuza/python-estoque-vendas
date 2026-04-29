@@ -15,10 +15,27 @@ def criar_arquivos_produtos():
                 "fornecedor",
                 "data_adicao"
             ])
+            
+def escolherOpcao():
+    print("******************")
+    print("     Bem vindo\n        ao\nSistema de Estoque")
+    print("******************")
+    opcao = input("\nDigite a opção que deseja escolher: ").lower()
   
 
 def menu():
-    print("Sistema de Estoque")
+   
+    opcao = escolherOpcao()
+    
+    match opcao:
+        case 'a':
+            return print("Opção escolhida: A")
+        case 'b':
+            return print("Opção escolhida: B")
+        case 'c':
+            return print("Opção escolhida: C")
+        case 'd':
+            return print("Opção escolhida: D")
 
     
 criar_arquivos_produtos()
